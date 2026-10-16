@@ -1,0 +1,24 @@
+obstacle_detector:
+  ros__parameters:
+    use_sim_time: true
+    stop_range: 0.70
+
+obstacle_avoider:
+  ros__parameters:
+    use_sim_time: true
+    critical_range: 0.35
+    stop_range: 0.70
+    slow_range: 1.15
+    recover_range: 1.05
+    side_influence: 0.85
+    forward_speed: 0.22
+    slow_speed: 0.10
+    reverse_speed: 0.08
+    turn_speed: 0.90
+    side_bias: 0.35
+    commit_seconds: 0.55
+    critical_commit_seconds: 1.2
+    side_switch_margin: 0.25
+    report_timeout: 1.0
+    log_on_change: true
+    log_every_tick: false

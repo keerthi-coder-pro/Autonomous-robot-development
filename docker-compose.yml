@@ -1,0 +1,18 @@
+services:
+  virtual-robot:
+    build: .
+    platform: linux/amd64
+    user: root
+    ports:
+      - "6080:80"
+    shm_size: "512m"
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      USER: ubuntu
+      PASSWORD: ubuntu
+    volumes:
+      - .:/home/ubuntu/workspace
+      - ./scripts/entrypoint-dev.sh:/usr/local/bin/entrypoint-dev.sh:ro
+    stdin_open: true
+    tty: true
