@@ -12,7 +12,7 @@ GRAPHS = ROOT / "docs" / "graphs"
 OUT = ROOT / "docs" / "Virtual_Autonomous_Robot_Project_Report.pdf"
 OUT_DOWNLOADS = Path.home() / "Downloads" / "Virtual_Autonomous_Robot_Project_Report.pdf"
 
-STUDENT_NAME = "[Keerthi Chinnari]"
+STUDENT_NAME = "Keerthi Chinnari"
 REG_NO = "230301120534"
 GUIDE = "Mr. Saswat Panda"
 DEPT = "Department of Electronic and Communication Engineering"
